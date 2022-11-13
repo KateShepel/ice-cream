@@ -1,0 +1,25 @@
+{
+  "name": "ice-cream",
+  "version": "1.0.0",
+  "description": "The landing site of the Ice Cream company.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KateShepel/ice-cream.git"
+  },
+  "author": "mariyakaterina@gmail.com, andrij.pechnikov@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KateShepel/ice-cream/issues"
+  },
+  "homepage": "https://github.com/KateShepel/ice-cream#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4"
+  }
+}
