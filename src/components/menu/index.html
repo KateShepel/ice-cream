@@ -2,22 +2,29 @@
 <section>
   <button
     type="button"
-    class="button__menu button__menu--close"
+    class="button__menu"
     aria-expanded="false"
     aria-controls="menu-container"
     data-menu-button-close
-  ></button>
-  <!-- TODO: Вставить в кнопу СВГ картинку закрытия из спрайта -->
-  <button type="button" class="button__form">Buy now</button>
-  <!-- TODO: Вставить СВГ стрелочку -->
+  >
+    <svg width="14" height="14" aria-label="Перемикач мобільного меню">
+      <use class="button__menu--close" href="#"></use>
+    </svg>
+  </button>
+  <button type="button" class="button__form">
+    Buy now
+    <svg width="8" height="8">
+      <use class="button__icon" href="#"></use>
+    </svg>
+  </button>
   <nav class="nav">
     <ul class="nav__list">
-      <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-      <li class="nav__item"><a href="" class="nav__link">About us</a></li>
-      <li class="nav__item"><a href="" class="nav__link">How it's made?</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
-      <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+      <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+      <li class="nav__item"><a href="#made" class="nav__link">How it's made?</a></li>
+      <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
     </ul>
-    <!-- TODO: Прописать в ссылках названия для якорей -->
+    <!-- TODO: Андрію прописати якірні посилання в секціях через Id -->
   </nav>
 </section>
