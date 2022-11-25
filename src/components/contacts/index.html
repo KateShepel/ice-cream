@@ -1,68 +1,84 @@
 <!-- kate -->
-<section>
+<section id="contact" class="contacts">
   <h2 class="visually-hidden">Contacts</h2>
-  <ul>
-    <li>
-      <h3>cafe</h3>
-      <h4>Chicago</h4>
-      <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <ul>
-        <li>
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
+  <ul class="contacts__list">
+    <li class="contacts__item">
+      <h3 class="contacts__place contacts__place--orange">cafe</h3>
+      <h4 class="contacts__city">Chicago</h4>
+      <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+      <ul class="schedule">
+        <li class="schedule__item">
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="Schedule__time">06:00 AM - 10:00 PM</p>
         </li>
-        <li>
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
-        </li>
-      </ul>
-      <ul>
-        <li><a>+61(0) 383 766 284</a></li>
-        <li><a>noreply@envato.com</a></li>
-      </ul>
-    </li>
-    <li>
-      <h3>foodtruck</h3>
-      <h4>Los Angeles</h4>
-      <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <ul>
-        <li>
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
-        </li>
-        <li>
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
+        <li class="schedule__item">
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="Schedule__time">08:00 AM - 16:00 PM</p>
         </li>
       </ul>
-      <ul>
-        <li><a>+61(0) 383 766 284</a></li>
-        <li><a>noreply@envato.com</a></li>
+      <ul class="contacts__info">
+        <li class="contacts__phone"><a>+61(0) 383 766 284</a></li>
+        <li class="contacts__email"><a>noreply@envato.com</a></li>
       </ul>
     </li>
-    <li>
-      <h3>cafe</h3>
-      <h4>New York</h4>
-      <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <ul>
-        <li>
-          <p>Monday - Friday</p>
-          <p>06:00 AM - 10:00 PM</p>
+
+    <li class="contacts__item">
+      <h3 class="contacts__place contacts__place--green">foodtruck</h3>
+      <h4 class="contacts__city">Los Angeles</h4>
+      <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+      <ul class="schedule">
+        <li class="schedule__item">
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="Schedule__time">06:00 AM - 10:00 PM</p>
         </li>
-        <li>
-          <p>Saturday - Sunday</p>
-          <p>08:00 AM - 16:00 PM</p>
+        <li class="schedule__item">
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="Schedule__time">08:00 AM - 16:00 PM</p>
         </li>
       </ul>
-      <ul>
-        <li><a>+61(0) 383 766 284</a></li>
-        <li><a>noreply@envato.com</a></li>
+      <ul class="contacts__info">
+        <li class="contacts__phone"><a>+61(0) 383 766 284</a></li>
+        <li class="contacts__email"><a>noreply@envato.com</a></li>
+      </ul>
+    </li>
+
+    <li class="contacts__item">
+      <h3 class="contacts__place contacts__place--orange">cafe</h3>
+      <h4 class="contacts__city">New York</h4>
+      <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+      <ul class="schedule">
+        <li class="schedule__item">
+          <p class="schedule__day">Monday - Friday</p>
+          <p class="Schedule__time">06:00 AM - 10:00 PM</p>
+        </li>
+        <li class="schedule__item">
+          <p class="schedule__day">Saturday - Sunday</p>
+          <p class="Schedule__time">08:00 AM - 16:00 PM</p>
+        </li>
+      </ul>
+      <ul class="contacts__info">
+        >
+        <li class="contacts__phone"><a>+61(0) 383 766 284</a></li>
+        <li class="contacts__email"><a>noreply@envato.com</a></li>
       </ul>
     </li>
   </ul>
-  <ul>
-    <li><a>Our Locations</a></li>
-    <li><a>Franchise</a></li>
-    <!-- TODO: Добавить СВГ стрелочки -->
+  <ul class="options">
+    <li class="options__locations">
+      <a
+        >Our Locations
+        <svg width="8" height="8">
+          <use class="button__icon button__icon--white" href="#"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="options__franchise">
+      <a
+        >Franchise
+        <svg width="8" height="8">
+          <use class="button__icon" href="#"></use>
+        </svg>
+      </a>
+    </li>
   </ul>
 </section>
