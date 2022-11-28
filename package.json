@@ -20,6 +20,7 @@
     "@parcel/transformer-sass": "^2.8.0",
     "parcel": "^2.8.0",
     "posthtml-doctype": "^1.1.1",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "sharp": "^0.31.2"
   }
 }
