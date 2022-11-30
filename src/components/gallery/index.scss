@@ -2,6 +2,7 @@
 	$width-image: 38.286px;
 
 	&__container {
+		perspective: 200px;
 		display: grid;
 		height: 122px;
 		grid-template-rows: repeat(11, 1fr);
@@ -14,8 +15,14 @@
 		border-radius: 10%;
 		height: 3fr;
 		width: 1fr;
+		transition-duration: 250ms;
+		transform: scale(1);
+		// transform-style: preserve-3d;
+
 		&:hover {
-			transform: scale(1.25) rotateZ(1 deg);
+			transition-duration: 500ms;
+			z-index: 55;
+			transform: scale(1.25);
 		}
 	}
 
