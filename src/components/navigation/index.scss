@@ -1,0 +1,23 @@
+.logo {
+  font-family: $font-primary;
+  font-size: 28px;
+  line-height: 1.04;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $main-color;
+
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+}
+
+.top-part .container {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__menu {
+  background-color: transparent;
+}

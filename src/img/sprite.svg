@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="menu" viewBox="0 0 20 14">
+      <path d="M0 1H20" stroke="#D41443"/>
+      <path d="M0 7H20" stroke="#D41443"/>
+      <path d="M0 13H20" stroke="#D41443"/>    
+    </symbol>
+  </defs>
+</svg>
