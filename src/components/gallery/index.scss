@@ -15,10 +15,11 @@
 
 	&__item {
 		border-radius: 10%;
-		height: 3fr;
-		width: 1fr;
+
 		transition-duration: 250ms;
 		transform: scale(1);
+		height: 3fr;
+		width: 1fr;
 
 		&:hover {
 			transition-duration: 500ms;
