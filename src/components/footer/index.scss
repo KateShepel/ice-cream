@@ -1,5 +1,5 @@
 .footer {
-	background-color: #fff5f6;
+	background-color: $background-footer-and-contacts;
 	&__sign-section {
 		text-align: start;
 		width: 234px;
@@ -35,7 +35,7 @@
 		left: calc(-100vw / 2 + 100% / 2);
 		width: 100vw;
 		height: 1px;
-		background-color: #e1e1e1;
+		background-color: $footer-horizontal-line-color;
 	}
 
 	&__copyright {
@@ -45,13 +45,5 @@
 		line-height: 152%;
 		text-align: center;
 		color: $grey-text-color;
-	}
-}
-
-.social {
-	&__item {
-	}
-
-	&__icon {
 	}
 }
