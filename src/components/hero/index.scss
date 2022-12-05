@@ -1,0 +1,45 @@
+.hero {
+  background-color: $pink-background-color;
+  position: relative;
+  background-image: url('./img/hero-icecream.png'), url('./img/hero-circle.svg');
+  background-repeat: no-repeat;
+  background-position: right 30 bottom 0, right 0 top 25;
+  padding-top: 140px;
+  padding-bottom: 160px;
+
+  &__title {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    color: $light-text-color;
+    font-weight: 400;
+
+    &--part {
+      font-size: 48px;
+      line-height: 1.04;
+      color: $main-color;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  &__anchor {
+    font-size: 8px;
+    line-height: 1.3;
+    text-decoration: none;
+    background-color: $light-text-color;
+    color: $main-color;
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    &--pink {
+      background-color: $main-color;
+      color: $light-text-color;
+    }
+  }
+}
