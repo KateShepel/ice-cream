@@ -2,9 +2,12 @@
 <section class="top-part">
   <div class="container">
     <a href="./index.html" class="logo">
-      <img src="/src/img/ice-cream-logo.png" width="50" alt="company logo" class="logo__icon" />
+      <svg width="50" height="50" aria-label="Company logo" class="logo__icon">
+        <use href="./img/sprite.svg#logo"></use>
+      </svg>
       icecream</a
     >
+
     <button
       type="button"
       class="button__menu"
@@ -12,7 +15,7 @@
       aria-controls="menu-container"
       data-menu-button-open
     >
-      <svg width="20" height="12" aria-label="Перемикач мобільного меню">
+      <svg width="20" height="12" aria-label="Mobile menu switcher">
         <use class="button__menu--open" href="./img/sprite.svg#menu"></use>
       </svg>
     </button>
