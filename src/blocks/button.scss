@@ -1,0 +1,22 @@
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: $main-color;
+  background-color: $light-text-color;
+  padding: 15px 38px;
+  border-radius: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 10px;
+    background-image: url('./img/button-arrow.svg');
+  }
+}

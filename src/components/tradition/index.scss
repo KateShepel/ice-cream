@@ -1,0 +1,43 @@
+.tradition {
+  background-color: $light-pink-background-color;
+  padding-top: 125px;
+  padding-bottom: 40px;
+  background-image: url(./img/bg-cow.png);
+  background-repeat: no-repeat;
+  background-position: top 270 left 0;
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 4%;
+    text-align: center;
+    color: $main-color;
+    text-transform: uppercase;
+    margin-bottom: 350px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+
+    &--gray {
+      color: $grey-text-color;
+      margin-bottom: 20px;
+    }
+  }
+
+  & .button {
+    margin-top: 25px;
+  }
+}
