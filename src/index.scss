@@ -3,6 +3,7 @@
 @import './utils/preset.scss';
 @import './utils/sign-section.scss';
 @import './utils/container.scss';
+@import './utils/visually-hidden.scss';
 
 @import './blocks/button.scss';
 
@@ -10,3 +11,5 @@
 @import './components/products/index.scss';
 @import './components/navigation/index.scss';
 @import './components/tradition/index.scss';
+@import './components/footer/index.scss';
+@import './components/gallery/index.scss';
