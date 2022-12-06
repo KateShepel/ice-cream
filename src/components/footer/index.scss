@@ -1,0 +1,49 @@
+.footer {
+	background-color: $light-background-color;
+	&__sign-section {
+		text-align: start;
+		width: 234px;
+		margin-bottom: 43px;
+	}
+
+	&__social {
+		display: flex;
+		justify-content: end;
+		gap: 28px;
+		margin-bottom: 46px;
+	}
+
+	&__contacts {
+		font-family: $font-secondary;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 186%;
+		text-align: right;
+		color: $dark-text-color;
+		margin-bottom: 43px;
+		a {
+			color: $main-color;
+			text-decoration: none;
+		}
+	}
+
+	&__horizontal-line {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 22px;
+		position: relative;
+		left: calc(-100vw / 2 + 100% / 2);
+		width: 100vw;
+		height: 1px;
+		background-color: $footer-horizontal-line-color;
+	}
+
+	&__copyright {
+		font-family: $font-secondary;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 152%;
+		text-align: center;
+		color: $grey-text-color;
+	}
+}
