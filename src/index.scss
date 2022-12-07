@@ -5,9 +5,12 @@
 @import './utils/container.scss';
 @import './utils/visually-hidden.scss';
 
+@import './blocks/button.scss';
+
+@import './components/reviews/index.scss';
 @import './components/products/index.scss';
 @import './components/navigation/index.scss';
+@import './components/tradition/index.scss';
 @import './components/hero/index.scss';
-@import './components/reviews/index.scss';
 @import './components/footer/index.scss';
 @import './components/gallery/index.scss';
