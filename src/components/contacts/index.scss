@@ -85,3 +85,11 @@
     color: $secondary-color;
   }
 }
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 115px;
+}

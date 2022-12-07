@@ -13,10 +13,24 @@
   gap: 15px;
 
   &::after {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 10px;
+    @extend %icon;
     background-image: url('./img/button-arrow.svg');
   }
+
+  &--secondary {
+    color: $light-text-color;
+    background-color: $main-color;
+
+    &::after {
+      @extend %icon;
+      background-image: url('./img/button-arrow-secondary.svg');
+    }
+  }
+}
+
+%icon {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 10px;
 }
