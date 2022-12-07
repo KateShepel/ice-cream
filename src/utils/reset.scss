@@ -1,17 +1,6 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 input,
 textarea {
   outline: none;
-}
-
-button,
-a {
-  cursor: pointer;
 }
 
 button {
@@ -25,12 +14,6 @@ h4,
 p,
 body {
   margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 ul {
