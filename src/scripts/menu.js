@@ -7,11 +7,13 @@
         const expanded =
             menuBtnOpenRef.getAttribute("aria-expanded") === "true" || false;
         menuBtnOpenRef.setAttribute("aria-expanded", !expanded);
+        menuBtnCloseRef.setAttribute('aria-expanded', !expanded);
         mobileMenuRef.classList.toggle("is-open");
     });
 
     menuBtnCloseRef.addEventListener('click', () => {
         const expanded = menuBtnCloseRef.getAttribute('aria-expanded') === 'true' || false;
+        menuBtnOpenRef.setAttribute('aria-expanded', !expanded);
         menuBtnCloseRef.setAttribute('aria-expanded', !expanded);
         mobileMenuRef.classList.toggle('is-open');
     });
