@@ -45,13 +45,30 @@
     padding-top: 130px;
     padding-bottom: 66px;
     background-image: url(./img/tablet/bg-cow.png);
+    background-position: top 280 left 20;
 
     &__text-container {
       margin-left: 360px;
     }
 
     &__title {
+      font-size: 48px;
+
       margin-bottom: 100px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+
+    & .button {
+      margin-top: 60px;
     }
   }
 }
