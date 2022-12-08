@@ -40,4 +40,18 @@
   & .button {
     margin-top: 25px;
   }
+
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: url(./img/tablet/bg-cow.png);
+
+    &__text-container {
+      margin-left: 360px;
+    }
+
+    &__title {
+      margin-bottom: 100px;
+    }
+  }
 }
