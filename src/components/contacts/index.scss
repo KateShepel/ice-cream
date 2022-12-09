@@ -1,0 +1,95 @@
+.contacts {
+  background: linear-gradient(180deg, $light-text-color 6%, $light-background-color 0%);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  &__item {
+    background-color: $light-text-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 20px;
+    width: 220px;
+  }
+
+  &__place {
+    @extend %title-text;
+    color: $light-text-color;
+    background-color: $cream-background-color;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 25px;
+    display: inline-block;
+    margin-bottom: 25px;
+
+    &--green {
+      background-color: $green-background-color;
+    }
+  }
+
+  &__city {
+    @extend %title-text;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @extend %usual-text;
+    @extend %divider;
+  }
+
+  &__info {
+    @extend %usual-text;
+  }
+}
+
+%divider {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $footer-horizontal-line-color;
+  margin-bottom: 25px;
+}
+
+%usual-text {
+  color: $grey-text-color;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+%title-text {
+  font-family: $font-secondary;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04;
+}
+
+.schedule {
+  @extend %divider;
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__day {
+    @extend %title-text;
+  }
+
+  &__time {
+    @extend %title-text;
+    color: $secondary-color;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 115px;
+}
