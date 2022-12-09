@@ -4,7 +4,7 @@
   line-height: 1.3;
   color: $main-color;
   background-color: $light-text-color;
-  padding: 15px 38px;
+  padding: 13px 38px;
   border-radius: 22px;
 
   display: flex;
@@ -13,14 +13,28 @@
   gap: 15px;
 
   &::after {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 10px;
+    @extend %icon;
     background-image: url('./img/button-arrow.svg');
   }
 
   @media screen and (min-width: $tablet-size) {
     font-size: 16px;
   }
+
+  &--secondary {
+    color: $light-text-color;
+    background-color: $main-color;
+
+    &::after {
+      @extend %icon;
+      background-image: url('./img/button-arrow-secondary.svg');
+    }
+  }
+}
+
+%icon {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 10px;
 }
