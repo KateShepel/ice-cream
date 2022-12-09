@@ -1,30 +1,27 @@
 <!-- kate -->
-<section>
-  <button
-    type="button"
-    class="button__menu"
-    aria-expanded="false"
-    aria-controls="menu-container"
-    data-menu-button-close
-  >
-    <svg width="14" height="14" aria-label="Перемикач мобільного меню">
-      <use class="button__menu--close" href="#"></use>
-    </svg>
-  </button>
-  <button type="button" class="button__form">
-    Buy now
-    <svg width="8" height="8">
-      <use class="button__icon" href="#"></use>
-    </svg>
-  </button>
+<section id="mobile-menu" class="mobile-menu" data-menu>
+  <div class="mobile-menu__close">
+    <button
+      type="button"
+      class="button__menu button__menu--close"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-button-close
+    >
+      <svg width="16" height="16" aria-label="Mobile menu close-button">
+        <use class="button__menu--close" href="./img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <button type="button" class="button button__form">Buy now</button>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-      <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
-      <li class="nav__item"><a href="#made" class="nav__link">How it's made?</a></li>
       <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+      <li class="nav__item"><a href="#made" class="nav__link">How it's made?</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
       <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
     </ul>
-    <!-- TODO: Андрію прописати якірні посилання в секціях через Id -->
   </nav>
 </section>

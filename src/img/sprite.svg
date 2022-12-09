@@ -27,5 +27,9 @@
         -17z"/>
       </g>
     </symbol>
+    <symbol id="close" viewBox="0 0 16 16">
+      <path d="M1.25928 1L14.7408 15" stroke="white"/>
+      <path d="M1 14.7407L15 1.25924" stroke="white"/>   
+    </symbol>
   </defs>
 </svg>
