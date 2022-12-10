@@ -17,6 +17,10 @@
     background-image: url('./img/button-arrow.svg');
   }
 
+  @media screen and (min-width: $tablet-size) {
+    font-size: 16px;
+  }
+
   &--secondary {
     color: $light-text-color;
     background-color: $main-color;

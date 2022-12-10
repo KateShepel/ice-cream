@@ -4,7 +4,7 @@
   padding-bottom: 40px;
   background-image: url(./img/bg-cow.png);
   background-repeat: no-repeat;
-  background-position: top 270 left 0;
+  background-position: top 270 left 50%;
 
   &__title {
     font-size: 34px;
@@ -40,5 +40,36 @@
 
   & .button {
     margin-top: 25px;
+  }
+
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: url(./img/tablet/bg-cow.png);
+    background-position: top 280 left 20;
+
+    &__text-container {
+      margin-left: 360px;
+    }
+
+    &__title {
+      font-size: 48px;
+
+      margin-bottom: 100px;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+
+    & .button {
+      margin-top: 60px;
+    }
   }
 }
