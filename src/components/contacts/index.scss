@@ -1,12 +1,21 @@
 .contacts {
   background: linear-gradient(180deg, $light-text-color 6%, $light-background-color 0%);
 
+  @media screen and (min-width: $tablet-size) {
+    background: linear-gradient(180deg, $light-text-color 9%, $light-background-color 0%);
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     margin-bottom: 55px;
+
+    @media screen and (min-width: $tablet-size) {
+      flex-direction: row;
+      margin-bottom: 80px;
+    }
   }
 
   &__item {
@@ -15,6 +24,10 @@
     border-radius: 24px;
     padding: 40px 20px;
     width: 220px;
+
+    @media screen and (min-width: $tablet-size) {
+      padding: 50px 30px;
+    }
   }
 
   &__place {
@@ -31,11 +44,20 @@
     &--green {
       background-color: $green-background-color;
     }
+
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
   }
 
   &__city {
     @extend %title-text;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
@@ -45,6 +67,10 @@
 
   &__info {
     @extend %usual-text;
+
+    @media screen and (min-width: $tablet-size) {
+      line-height: 1.83;
+    }
   }
 }
 
@@ -52,6 +78,11 @@
   padding-bottom: 25px;
   border-bottom: 1px solid $footer-horizontal-line-color;
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-size) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 %usual-text {
@@ -59,6 +90,11 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
+
+  @media screen and (min-width: $tablet-size) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
 }
 
 %title-text {
@@ -67,6 +103,10 @@
   font-weight: 500;
   line-height: 1.86;
   letter-spacing: 0.04;
+
+  @media screen and (min-width: $tablet-size) {
+    font-size: 14px;
+  }
 }
 
 .schedule {
@@ -74,6 +114,10 @@
 
   &__item:not(:last-child) {
     margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 15px;
+    }
   }
 
   &__day {
@@ -89,7 +133,14 @@
 .options {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   align-items: center;
   padding-bottom: 115px;
+
+  @media screen and (min-width: $tablet-size) {
+    flex-direction: row;
+    gap: 15px;
+    padding-bottom: 160px;
+  }
 }
