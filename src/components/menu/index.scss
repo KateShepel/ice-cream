@@ -23,6 +23,10 @@
     justify-content: end;
     margin-bottom: 25px;
   }
+
+  @media screen and (min-width: $tablet-size) {
+    width: 255px;
+  }
 }
 
 .nav {
