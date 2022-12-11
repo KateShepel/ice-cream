@@ -7,6 +7,19 @@
   padding-top: 140px;
   padding-bottom: 160px;
 
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 15px;
+    padding-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   &__title {
     font-size: 26px;
     line-height: 1.15;
@@ -15,10 +28,18 @@
     color: $light-text-color;
     font-weight: 400;
 
+    @media screen and (min-width: $tablet-size) {
+      font-size: 22px;
+    }
+
     &--part {
       font-size: 48px;
       line-height: 1.04;
       color: $main-color;
+
+      @media screen and (min-width: $tablet-size) {
+        font-size: 34px;
+      }
     }
   }
 
@@ -26,6 +47,10 @@
     display: flex;
     gap: 8px;
     margin-top: 20px;
+
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 35px;
+    }
   }
 
   &__anchor {
@@ -39,6 +64,48 @@
 
     &--pink {
       background-color: $main-color;
+      color: $light-text-color;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-size-block) {
+  .description,
+  .hero__info {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .description {
+    &__text {
+      font-size: 8px;
+      line-height: 1.5;
+      color: $light-text-color;
+
+      margin-bottom: 7px;
+    }
+  }
+
+  .hero__info {
+    margin-left: 0;
+    margin-right: 0;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    &-title {
+      font-size: 28px;
+      line-height: 1.14;
+      color: $main-color;
+    }
+
+    &-text {
+      font-size: 8px;
+      line-height: 1.5;
       color: $light-text-color;
     }
   }
