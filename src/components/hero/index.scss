@@ -1,9 +1,4 @@
 .hero {
-  background-color: $pink-background-color;
-  position: relative;
-  background-image: url('./img/hero-icecream.png'), url('./img/hero-circle.svg');
-  background-repeat: no-repeat;
-  background-position: right 30 bottom 0, right 0 top 25;
   padding-top: 140px;
   padding-bottom: 160px;
 
@@ -11,12 +6,9 @@
     padding-top: 15px;
     padding-bottom: 35px;
 
-    display: flex;
-    justify-content: space-between;
-
     &__container {
-      margin-left: 0;
-      margin-right: 0;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -78,19 +70,34 @@
 
 @media screen and (min-width: $tablet-size) {
   .description {
+    display: flex;
+    align-items: flex-end;
+
     &__text {
       font-size: 8px;
       line-height: 1.5;
       color: $light-text-color;
+      width: 115px;
 
       margin-bottom: 7px;
+    }
+
+    &__button {
+      border-radius: 50%;
+      background-color: $light-text-color;
+      fill: $main-color;
+      display: flex;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+    }
+
+    &__container {
+      padding-bottom: 10px;
     }
   }
 
   .hero__info {
-    margin-left: 0;
-    margin-right: 0;
-
     &-list {
       display: flex;
       flex-direction: column;
@@ -107,6 +114,12 @@
       font-size: 8px;
       line-height: 1.5;
       color: $light-text-color;
+    }
+
+    &-item {
+      background-image: url(./img/tablet/bg-white-circle.svg);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0;
     }
   }
 }
