@@ -13,11 +13,8 @@
 
 .top-part {
   padding-top: 5px;
-
-  & .container {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
 
   @media screen and (min-width: $tablet-size) {
     padding-top: 35px;

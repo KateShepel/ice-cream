@@ -1,12 +1,15 @@
 .header {
   background-color: $pink-background-color;
-  background-image: url('./img/hero-icecream.png'), url('./img/hero-circle.svg');
-  background-repeat: no-repeat;
-  background-position: right 30 bottom 0, right 0 top 85;
 
-  @media screen and (min-width: $tablet-size) {
-    background-image: url('./img/tablet/hero-bg-icecream.png'),
-      url('./img/tablet/hero-bg-picture.png'), url('./img/tablet/hero-pink-circle.png');
-    background-position: right 250 bottom 0, right 45 bottom 0, right 140 top 30;
+  &__container {
+    background-image: url('./img/hero-icecream.png'), url('./img/hero-circle.svg');
+    background-repeat: no-repeat;
+    background-position: right 30 bottom 0, right 0 top 85;
+
+    @media screen and (min-width: $tablet-size) {
+      background-image: url('./img/tablet/hero-bg-icecream.png'),
+        url('./img/tablet/hero-bg-picture.png'), url('./img/tablet/hero-pink-circle.png');
+      background-position: right 250 bottom 0, right 45 bottom 0, right 140 top 30;
+    }
   }
 }

@@ -3,13 +3,10 @@
   padding-bottom: 160px;
 
   @media screen and (min-width: $tablet-size) {
-    padding-top: 15px;
-    padding-bottom: 35px;
-
-    &__container {
-      display: flex;
-      justify-content: space-between;
-    }
+    padding-top: 0;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {
@@ -41,7 +38,7 @@
     margin-top: 20px;
 
     @media screen and (min-width: $tablet-size) {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
   }
 
