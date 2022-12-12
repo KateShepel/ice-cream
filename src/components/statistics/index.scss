@@ -42,4 +42,26 @@
       background-image: url(./img/third-statistics-icon.png);
     }
   }
+
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 65px;
+    padding-bottom: 135px;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__list {
+      display: flex;
+      gap: 60px;
+    }
+
+    &__item::before {
+      margin-bottom: 35px;
+    }
+  }
 }
