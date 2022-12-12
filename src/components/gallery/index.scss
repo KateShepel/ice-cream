@@ -1,5 +1,6 @@
 .galery {
 	$width-image: 38.286px;
+	background: linear-gradient(180deg, $light-background-color 40%, $light-text-color 0%);
 
 	&__container {
 		margin-bottom: 126px;
