@@ -44,7 +44,6 @@
   }
 
   @media screen and (min-width: $tablet-size) {
-    padding-top: 65px;
     padding-bottom: 135px;
 
     &__title {
@@ -62,6 +61,27 @@
 
     &__item::before {
       margin-bottom: 35px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    padding-bottom: 140px;
+
+    &__title {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__list {
+      gap: 30px;
+    }
+
+    &__item::before {
+      margin-bottom: 40px;
     }
   }
 }
