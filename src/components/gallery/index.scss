@@ -1,10 +1,9 @@
 .galery {
+
 	$width-image: 38.286px;
 	background: linear-gradient(180deg, $light-background-color 40%, $light-text-color 0%);
+	padding-bottom: 126px;
 
-	&__container {
-		margin-bottom: 126px;
-	}
 	&__list {
 		perspective: 200px;
 		display: grid;

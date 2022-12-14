@@ -5,6 +5,7 @@
 
 .reviews {
 	text-align: center;
+	padding-bottom: 86px;
 	&__slide {
 		flex-direction: column;
 		justify-content: start !important;
@@ -88,7 +89,6 @@
 	font-size: 14px;
 	background: $light-text-color;
 	height: 500px;
-	margin-bottom: 30px;
 
 	/* Center slide text vertically */
 	display: flex;
