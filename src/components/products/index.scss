@@ -1,7 +1,12 @@
 .products {
+
 	@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 		padding-bottom: 112px;
 	}
+
+	padding-bottom: 98px;
+	padding-top: 121px;
+
 
 	&__sign-section {
 		margin-bottom: 144px;

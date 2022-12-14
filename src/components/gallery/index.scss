@@ -1,9 +1,7 @@
 .galery {
 	$width-image: 38.286px;
+	padding-bottom: 126px;
 
-	&__container {
-		margin-bottom: 126px;
-	}
 	&__list {
 		perspective: 200px;
 		display: grid;
