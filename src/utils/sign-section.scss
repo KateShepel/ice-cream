@@ -1,5 +1,5 @@
 .sign-section {
-	font-family: "Titan One";
+	font-family: $font-primary;
 	text-transform: uppercase;
 	text-align: center;
 
@@ -8,6 +8,9 @@
 		line-height: 114%;
 		letter-spacing: 0.04em;
 		color: $main-color;
+		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+			font-size: 48px;
+		}
 	}
 
 	& p {
@@ -15,5 +18,8 @@
 		line-height: 116%;
 		color: $secondary-color;
 		margin-bottom: 15px;
+		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+			font-size: 26px;
+		}
 	}
 }
