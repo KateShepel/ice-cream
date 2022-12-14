@@ -18,7 +18,11 @@
     </div>
 
     <div class="description">
-      <img src="./img/tablet/milk.png" alt="Bio eco milk" />
+      <picture>
+        <source srcset="./img/tablet/milk.png" media="(min-width: 768px) and (max-width: 1199px)" />
+        <source srcset="./img/desktop/milk.png" media="(min-width: 1200px)" />
+        <img src="./img/tablet/milk.png" alt="Bio eco milk" />
+      </picture>
       <div class="description__container">
         <p class="description__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
