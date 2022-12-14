@@ -1,11 +1,13 @@
 .hero {
-  background-color: $pink-background-color;
-  position: relative;
-  background-image: url('./img/hero-icecream.png'), url('./img/hero-circle.svg');
-  background-repeat: no-repeat;
-  background-position: right 30 bottom 0, right 0 top 25;
   padding-top: 140px;
   padding-bottom: 160px;
+
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 0;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
     font-size: 26px;
@@ -15,10 +17,18 @@
     color: $light-text-color;
     font-weight: 400;
 
+    @media screen and (min-width: $tablet-size) {
+      font-size: 22px;
+    }
+
     &--part {
       font-size: 48px;
       line-height: 1.04;
       color: $main-color;
+
+      @media screen and (min-width: $tablet-size) {
+        font-size: 34px;
+      }
     }
   }
 
@@ -26,6 +36,10 @@
     display: flex;
     gap: 8px;
     margin-top: 20px;
+
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 20px;
+    }
   }
 
   &__anchor {
@@ -40,6 +54,69 @@
     &--pink {
       background-color: $main-color;
       color: $light-text-color;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-size-block) {
+  .description,
+  .hero__info {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .description {
+    display: flex;
+    align-items: flex-end;
+
+    &__text {
+      font-size: 8px;
+      line-height: 1.5;
+      color: $light-text-color;
+      width: 115px;
+
+      margin-bottom: 7px;
+    }
+
+    &__button {
+      border-radius: 50%;
+      background-color: $light-text-color;
+      fill: $main-color;
+      display: flex;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+    }
+
+    &__container {
+      padding-bottom: 10px;
+    }
+  }
+
+  .hero__info {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    &-title {
+      font-size: 28px;
+      line-height: 1.14;
+      color: $main-color;
+    }
+
+    &-text {
+      font-size: 8px;
+      line-height: 1.5;
+      color: $light-text-color;
+    }
+
+    &-item {
+      background-image: url(./img/svg/bg-white-circle.svg);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0;
     }
   }
 }
