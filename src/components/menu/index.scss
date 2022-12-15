@@ -27,6 +27,10 @@
   @media screen and (min-width: $tablet-size) {
     width: 255px;
   }
+
+  @media screen and (min-width: $desktop-size) {
+    display: none;
+  }
 }
 
 .nav {
@@ -46,13 +50,6 @@
   &__item:not(:last-child) {
     margin-bottom: 23px;
   }
-}
-
-.button__menu {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .top-part {

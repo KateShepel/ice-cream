@@ -1,0 +1,11 @@
+.button-menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $desktop-size) {
+    display: none;
+  }
+}
