@@ -3,10 +3,15 @@
   padding-bottom: 160px;
 
   @media screen and (min-width: $tablet-size) {
-    padding-top: 0;
+    padding-top: 15px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    padding-top: 85px;
+    padding-bottom: 45px;
   }
 
   &__title {
@@ -21,6 +26,10 @@
       font-size: 22px;
     }
 
+    @media screen and (min-width: $desktop-size) {
+      font-size: 38px;
+    }
+
     &--part {
       font-size: 48px;
       line-height: 1.04;
@@ -28,6 +37,11 @@
 
       @media screen and (min-width: $tablet-size) {
         font-size: 34px;
+        line-height: 0.91;
+      }
+
+      @media screen and (min-width: $desktop-size) {
+        font-size: 58px;
       }
     }
   }
@@ -40,6 +54,12 @@
     @media screen and (min-width: $tablet-size) {
       margin-bottom: 20px;
     }
+
+    @media screen and (min-width: $desktop-size) {
+      gap: 17px;
+      margin-top: 25px;
+      margin-bottom: 55px;
+    }
   }
 
   &__anchor {
@@ -51,9 +71,24 @@
     padding: 8px 15px;
     border-radius: 20px;
 
+    &:hover,
+    &:focus {
+      background-color: $hover-background-color;
+    }
+
     &--pink {
       background-color: $main-color;
       color: $light-text-color;
+
+      &:hover,
+      :focus {
+        background-color: $hover-pink-background-color;
+      }
+    }
+
+    @media screen and (min-width: $desktop-size) {
+      font-size: 14px;
+      padding: 15px, 25px;
     }
   }
 }
@@ -105,18 +140,62 @@
       font-size: 28px;
       line-height: 1.14;
       color: $main-color;
+      text-align: end;
+      padding-right: 10px;
     }
 
     &-text {
       font-size: 8px;
       line-height: 1.5;
       color: $light-text-color;
+      text-align: end;
+      padding-right: 10px;
     }
 
     &-item {
       background-image: url(./img/svg/bg-white-circle.svg);
       background-repeat: no-repeat;
       background-position: top 0 right 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .description {
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+      width: 200px;
+
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .hero__info {
+    &-list {
+      gap: 15px;
+    }
+
+    &-title {
+      font-size: 46px;
+      line-height: 1.15;
+      padding-right: 20px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.28;
+      padding-right: 20px;
+    }
+
+    &-item {
+      background-size: 30px;
     }
   }
 }

@@ -30,6 +30,11 @@
     color: $light-text-color;
     background-color: $main-color;
 
+    &:hover,
+    &:focus {
+      background-color: $hover-pink-background-color;
+    }
+
     &::after {
       @extend %icon;
       background-image: url('./img/button-arrow-secondary.svg');
