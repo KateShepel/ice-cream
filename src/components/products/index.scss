@@ -1,17 +1,22 @@
 .products {
+	padding-bottom: 98px;
+	padding-top: 121px;
 
 	@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 		padding-bottom: 112px;
 	}
-
-	padding-bottom: 98px;
-	padding-top: 121px;
-
+	@media screen and (min-width: $desktop-size) {
+		padding-top: 127px;
+		padding-bottom: 119px;
+	}
 
 	&__sign-section {
 		margin-bottom: 144px;
 		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 			margin-bottom: 150px;
+		}
+		@media screen and (min-width: $desktop-size) {
+			margin-bottom: 259px;
 		}
 	}
 
@@ -19,6 +24,10 @@
 		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 			display: flex;
 			gap: 20px;
+		}
+		@media screen and (min-width: $desktop-size) {
+			display: flex;
+			gap: 25px;
 		}
 	}
 
@@ -35,7 +44,7 @@
 
 		&:not(:last-child) {
 			margin-bottom: 130px;
-			@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+			@media screen and (min-width: $tablet-size) {
 				margin-bottom: 0px;
 			}
 		}
