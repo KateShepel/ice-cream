@@ -5,6 +5,14 @@
     background: linear-gradient(180deg, $light-text-color 9%, $light-background-color 0%);
   }
 
+  @media screen and (min-width: $desktop-size) {
+    background: url(./img/desktop/bg-contacts.png),
+      linear-gradient(180deg, $light-text-color 12%, $light-background-color 0%);
+    background-repeat: no-repeat;
+    background-position: left 0 top 20%;
+    background-size: contain;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -15,6 +23,11 @@
     @media screen and (min-width: $tablet-size) {
       flex-direction: row;
       margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: $desktop-size) {
+      gap: 30px;
+      margin-bottom: 85px;
     }
   }
 
@@ -28,6 +41,12 @@
     @media screen and (min-width: $tablet-size) {
       padding: 50px 30px;
     }
+
+    @media screen and (min-width: $desktop-size) {
+      padding: 50px 45px;
+      width: 330px;
+      height: 570px;
+    }
   }
 
   &__place {
@@ -37,7 +56,7 @@
     border-radius: 4px;
     text-transform: uppercase;
     text-align: center;
-    padding: 0 25px;
+    padding: 0 15px;
     display: inline-block;
     margin-bottom: 25px;
 
@@ -49,6 +68,10 @@
       font-size: 16px;
       margin-bottom: 30px;
     }
+
+    @media screen and (min-width: $desktop-size) {
+      border-radius: 6px;
+    }
   }
 
   &__city {
@@ -57,6 +80,10 @@
 
     @media screen and (min-width: $tablet-size) {
       margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 10px;
     }
   }
 
@@ -95,6 +122,11 @@
     font-size: 14px;
     line-height: 1.66;
   }
+
+  @media screen and (min-width: $desktop-size) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 %title-text {
@@ -106,6 +138,10 @@
 
   @media screen and (min-width: $tablet-size) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    font-size: 16px;
   }
 }
 
@@ -142,5 +178,9 @@
     flex-direction: row;
     gap: 15px;
     padding-bottom: 160px;
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    padding-bottom: 165px;
   }
 }

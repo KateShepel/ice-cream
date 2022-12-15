@@ -17,6 +17,11 @@
     background-image: url('./img/button-arrow.svg');
   }
 
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color;
+  }
+
   @media screen and (min-width: $tablet-size) {
     font-size: 16px;
   }
