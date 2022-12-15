@@ -45,22 +45,22 @@
 		}
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: -15px;
 			left: 4px;
-			background-image: url('./img/quotes.png');
+			background-image: url("./img/quotes.png");
 			width: 54px;
 			height: 40px;
 			z-index: -1;
 		}
 
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 28px;
 			left: 0;
-			background-image: url('./img/lines__reviews.png');
+			background-image: url("./img/lines__reviews.png");
 			background-repeat: no-repeat;
 			width: 180px;
 			height: 219px;
@@ -73,12 +73,8 @@
 			}
 
 			&::after {
-				content: '';
-				position: absolute;
-				top: 28px;
 				left: -20px;
-				background-image: url('./img/tablet/background-review-lines.png');
-				background-repeat: no-repeat;
+				background-image: url("./img/tablet/background-review-lines.png");
 				width: 524px;
 				height: 90px;
 			}
@@ -151,7 +147,7 @@
 
 .swiper-pagination-bullet-active {
 	border-radius: 0%;
-	background-image: url('./img//rewiews-house.svg');
+	background-image: url("./img//rewiews-house.svg");
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
