@@ -1,10 +1,13 @@
 .tradition {
   background-color: $light-background-color;
   padding-top: 125px;
-  padding-bottom: 40px;
-  background-image: url(./img/bg-cow.png);
-  background-repeat: no-repeat;
-  background-position: top 270 left 50%;
+
+  & .container {
+    background-image: url(./img/bg-cow.png);
+    background-repeat: no-repeat;
+    background-position: top 140 center;
+    padding-bottom: 40px;
+  }
 
   &__title {
     font-size: 34px;
@@ -44,9 +47,12 @@
 
   @media screen and (min-width: $tablet-size) {
     padding-top: 130px;
-    padding-bottom: 66px;
-    background-image: url(./img/tablet/bg-cow.png);
-    background-position: top 280 left 20;
+
+    & .container {
+      background-image: url(./img/tablet/bg-cow.png);
+      background-position: top 150 left 20;
+      padding-bottom: 65px;
+    }
 
     &__text-container {
       margin-left: 360px;
@@ -70,6 +76,48 @@
 
     & .button {
       margin-top: 60px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-size) {
+    padding-top: 125px;
+
+    background-image: url(./img/desktop/tradition-bg.png);
+    background-position: bottom 0 center;
+    background-repeat: no-repeat;
+
+    & .container {
+      background-image: url(./img/desktop/tradition-bg-cow.png);
+      background-position: top 170 left 0;
+      padding-bottom: 40px;
+    }
+
+    &__text-container {
+      margin-left: 590px;
+    }
+
+    &__title {
+      font-size: 58px;
+
+      margin-bottom: 105px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    &__text {
+      line-height: 1.94;
+
+      &--black {
+        font-size: 16px;
+        line-height: 1.76;
+      }
+    }
+
+    & .button {
+      margin-top: 45px;
     }
   }
 }
