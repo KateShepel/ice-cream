@@ -11,9 +11,9 @@
 		padding-bottom: 119px;
 	}
 
-	&__slide {
+	&__slide.swiper-slide {
 		flex-direction: column;
-		justify-content: start !important;
+		justify-content: start;
 	}
 
 	&__avatar {
