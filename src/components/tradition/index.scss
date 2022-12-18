@@ -1,13 +1,7 @@
 .tradition {
   background-color: $light-background-color;
   padding-top: 125px;
-
-  & .container {
-    background-image: url(./img/bg-cow.png);
-    background-repeat: no-repeat;
-    background-position: top 140 center;
-    padding-bottom: 40px;
-  }
+  padding-bottom: 40px;
 
   &__title {
     font-size: 34px;
@@ -16,7 +10,7 @@
     text-align: center;
     color: $main-color;
     text-transform: uppercase;
-    margin-bottom: 350px;
+    margin-bottom: 25px;
   }
 
   &__subtitle {
@@ -27,6 +21,11 @@
     color: $secondary-color;
     text-transform: uppercase;
     margin-bottom: 25px;
+  }
+
+  &__img {
+    display: inline-block;
+    margin-bottom: 45px;
   }
 
   &__text {
@@ -47,21 +46,25 @@
 
   @media screen and (min-width: $tablet-size) {
     padding-top: 130px;
+    padding-bottom: 65px;
 
-    & .container {
-      background-image: url(./img/tablet/bg-cow.png);
-      background-position: top 150 left 20;
-      padding-bottom: 65px;
+    &__img {
+      margin-bottom: 0;
+    }
+
+    &__content-container {
+      display: flex;
+      gap: 17px;
     }
 
     &__text-container {
-      margin-left: 360px;
+      width: 340px;
+      margin-top: 50px;
     }
 
     &__title {
       font-size: 48px;
-
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
 
     &__subtitle {
@@ -81,25 +84,24 @@
 
   @media screen and (min-width: $desktop-size) {
     padding-top: 125px;
+    padding-bottom: 40px;
 
     background-image: url(./img/desktop/tradition-bg.png);
     background-position: bottom 0 center;
     background-repeat: no-repeat;
+    background-size: contain;
 
-    & .container {
-      background-image: url(./img/desktop/tradition-bg-cow.png);
-      background-position: top 170 left 0;
-      padding-bottom: 40px;
+    &__content-container {
+      gap: 75px;
     }
 
     &__text-container {
-      margin-left: 590px;
+      width: 463px;
     }
 
     &__title {
       font-size: 58px;
-
-      margin-bottom: 105px;
+      margin-bottom: 55px;
     }
 
     &__subtitle {
