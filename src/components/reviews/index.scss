@@ -34,7 +34,7 @@
 			position: absolute;
 			top: -15px;
 			left: 4px;
-			background-image: url("./img/quotes.png");
+			background-image: url("./img/common/quotes.png");
 			width: 54px;
 			height: 40px;
 			z-index: -1;
@@ -45,7 +45,7 @@
 			position: absolute;
 			top: 28px;
 			left: 0;
-			background-image: url("./img/lines__reviews.png");
+			background-image: url("./img/common/lines__reviews.png");
 			width: 180px;
 			height: 219px;
 		}
@@ -109,7 +109,7 @@
 
 .swiper-pagination-bullet-active {
 	border-radius: 0%;
-	background-image: url("./img//rewiews-house.svg");
+	background-image: url("./img/svg/rewiews-house.svg");
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
