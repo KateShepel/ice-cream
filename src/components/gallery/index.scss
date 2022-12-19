@@ -10,22 +10,30 @@
 		grid-template-columns: repeat(7, 1fr);
 		gap: 2px;
 
-		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+		@media screen and (min-width: $tablet-size) {
 			gap: 5px;
 			margin-left: auto;
 			margin-right: auto;
 			height: 264px;
 			width: 620px;
 		}
+
+		@media screen and (min-width: $desktop-size) {
+			gap: 7px;
+			height: 432px;
+			width: 1010px;
+		}
 	}
 
 	&__item {
-		border-radius: 10%;
-
 		transition-duration: 250ms;
 		transform: scale(1);
 		height: 3fr;
 		width: 1fr;
+
+		& img {
+			border-radius: 15%;
+		}
 
 		&:hover {
 			transition-duration: 500ms;
@@ -68,6 +76,11 @@
 				width: calc(84.28px * 2 + 5px);
 				height: calc(84.28px * 2 + 5px);
 			}
+
+			@media screen and (min-width: $desktop-size) {
+				width: calc(138.3px * 2 + 7px);
+				height: calc(138.3px * 2 + 7px);
+			}
 		}
 
 		&:nth-child(5) {
@@ -93,6 +106,7 @@
 		}
 
 		&:nth-child(8) {
+			align-self: end;
 			grid-row-end: 5;
 			grid-row-start: 2;
 
@@ -101,9 +115,9 @@
 		}
 
 		&:nth-child(9) {
-			grid-row-start: 9;
-			grid-row-end: 6;
-			align-self: end;
+			grid-row-start: 8;
+			grid-row-end: 5;
+
 			grid-column-start: 6;
 			grid-column-end: 7;
 		}
