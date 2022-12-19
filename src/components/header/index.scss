@@ -18,5 +18,12 @@
       background-repeat: no-repeat;
       background-size: auto, auto, 323px;
     }
+
+    @media screen and (min-width: $desktop-size) {
+      background-image: url('./img/desktop/hero-bg-icecream.png'),
+        url('./img/desktop/hero-bg-picture.png'), url('./img/svg/bg-pink-circle.svg');
+      background-position: right 340 bottom 0, right 0 bottom 0, right 160 top 50;
+      background-size: auto, auto, 538px;
+    }
   }
 }
