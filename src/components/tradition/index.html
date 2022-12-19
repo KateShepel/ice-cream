@@ -3,18 +3,26 @@
   <div class="container">
     <p class="tradition__subtitle">tradition and love</p>
     <h2 class="tradition__title">how it's made?</h2>
-    <div class="tradition__text-container">
-      <p class="tradition__text tradition__text--black">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-      </p>
-      <p class="tradition__text tradition__text--gray">
-        Curabitur lacinia enim at ex blandit, vel pellentesque adio elementum. Mauris rhoncus orci
-        in imperdiet placerat.Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt.
-      </p>
-      <p class="tradition__text tradition__text--gray">Aliquam erat volutpat. Aenean accumsan.</p>
-      <button type="button" class="button">Read more</button>
+    <div class="tradition__content-container">
+      <picture class="tradition__img">
+        <source srcset="./img/mobile/cow.png" media="(max-width: 767px)" />
+        <source srcset="./img/tablet/cow.png" media="(min-width: 768px) and (max-width: 1199px)" />
+        <source srcset="./img/desktop/cow.png" media="(min-width: 1200px)" />
+        <img src="./img/mobile/cow.png" alt="Cow with milk" />
+      </picture>
+      <div class="tradition__text-container">
+        <p class="tradition__text tradition__text--black">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="tradition__text tradition__text--gray">
+          Curabitur lacinia enim at ex blandit, vel pellentesque adio elementum. Mauris rhoncus orci
+          in imperdiet placerat.Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="tradition__text tradition__text--gray">Aliquam erat volutpat. Aenean accumsan.</p>
+        <button type="button" class="button">Read more</button>
+      </div>
     </div>
   </div>
 </section>

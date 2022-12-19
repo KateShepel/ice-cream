@@ -1,27 +1,26 @@
 .product-card {
-	padding-top: 161px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-bottom: 41px;
+	padding: 161px 16px 41px;
 	border-radius: 24px;
-
 	position: relative;
-
 	text-align: center;
 
 	@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
-		padding-top: 152px;
-		padding-left: 11px;
-		padding-right: 11px;
-		padding-bottom: 40px;
+		padding: 152px 11px 40px;
+	}
+
+	@media screen and (min-width: $desktop-size) {
+		padding: 163px 45px 50px;
 	}
 
 	&__img {
 		position: absolute;
 		top: -113px;
 
-		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+		@media screen and (min-width: $tablet-size) {
 			left: 0;
+		}
+		@media screen and (min-width: $desktop-size) {
+			top: -210px;
 		}
 	}
 
@@ -37,6 +36,11 @@
 		color: $light-text-color;
 
 		margin-bottom: 30px;
+
+		@media screen and (min-width: $desktop-size) {
+			font-size: 30px;
+			margin-bottom: 32px;
+		}
 	}
 
 	&__ellipsis {
@@ -47,6 +51,10 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 30px;
+
+		@media screen and (min-width: $desktop-size) {
+			margin-bottom: 32px;
+		}
 	}
 
 	&__ellips {
@@ -68,6 +76,10 @@
 
 		@media screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
 			line-height: 176%;
+		}
+		@media screen and (min-width: $desktop-size) {
+			font-size: 16px;
+			margin-bottom: 62px;
 		}
 	}
 
