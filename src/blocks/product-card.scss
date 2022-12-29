@@ -93,6 +93,10 @@
 		height: 40px;
 		border-radius: 50%;
 		background-color: $light-text-color;
+
+		&:hover {
+			background-color: $hover-background-color;
+		}
 	}
 
 	&__right-arrow {
