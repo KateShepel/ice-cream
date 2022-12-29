@@ -14,7 +14,7 @@
 
   &::after {
     @extend %icon;
-    background-image: url('./img/button-arrow.svg');
+    background-image: url("./img/svg/button-arrow.svg");
   }
 
   &:hover,
@@ -37,13 +37,13 @@
 
     &::after {
       @extend %icon;
-      background-image: url('./img/button-arrow-secondary.svg');
+      background-image: url("./img/svg/button-arrow-secondary.svg");
     }
   }
 }
 
 %icon {
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 10px;
