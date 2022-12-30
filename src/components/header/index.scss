@@ -1,7 +1,7 @@
 .header {
   background-color: $pink-background-color;
 
-  background-image: url('./img/hero-icecream.png'), url('./img/svg/bg-pink-circle.svg');
+  background-image: url("./img/mobile/hero-icecream.png"), url("./img/svg/bg-pink-circle.svg");
   background-repeat: no-repeat;
   background-size: auto, 345px;
   background-position: right 30 bottom 0, right -70 top 85;
@@ -12,11 +12,18 @@
 
   &__container {
     @media screen and (min-width: $tablet-size) {
-      background-image: url('./img/tablet/hero-bg-icecream.png'),
-        url('./img/tablet/hero-bg-picture.png'), url('./img/svg/bg-pink-circle.svg');
+      background-image: url("./img/tablet/hero-bg-icecream.png"), url("./img/tablet/hero-bg-picture.png"),
+        url("./img/svg/bg-pink-circle.svg");
       background-position: right 250 bottom 0, right 45 bottom 0, right 140 top 30;
       background-repeat: no-repeat;
       background-size: auto, auto, 323px;
+    }
+
+    @media screen and (min-width: $desktop-size) {
+      background-image: url("./img/desktop/hero-bg-icecream.png"), url("./img/desktop/hero-bg-picture.png"),
+        url("./img/svg/bg-pink-circle.svg");
+      background-position: right 340 bottom 0, right 0 bottom 0, right 160 top 50;
+      background-size: auto, auto, 538px;
     }
   }
 }

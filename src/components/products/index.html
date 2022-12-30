@@ -7,7 +7,12 @@
     </div>
     <ul class="products__list">
       <li class="products__item products__item--secondary-color product-card">
-        <img src="./img/products-1.png" alt="" class="product-card__img" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/products-1.png" />
+          <source media="(min-width: 320px)" srcset="./img/common/products-1.png" />
+          <img src="./img/common/products-2.png" alt="Icecream" class="product-card__img" />
+        </picture>
+
         <h3 class="product-card__title">ice cream</h3>
         <div class="product-card__ellipsis">
           <span class="product-card__ellips"></span>
@@ -26,7 +31,12 @@
       </li>
 
       <li class="products__item products__item--cream-color product-card">
-        <img src="./img/products-2.png" alt="" class="product-card__img" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/products-2.png" />
+          <source media="(min-width: 320px)" srcset="./img/common/products-2.png" />
+          <img src="./img/common/products-2.png" alt="Cocktail" class="product-card__img" />
+        </picture>
+
         <h3 class="product-card__title">ice coffee</h3>
         <div class="product-card__ellipsis">
           <span class="product-card__ellips"></span>
@@ -45,7 +55,11 @@
       </li>
 
       <li class="products__item products__item--green-color product-card">
-        <img src="./img/products-3.png" alt="" class="product-card__img" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/desktop/products-3.png" />
+          <source media="(min-width: 320px)" srcset="./img/common/products-3.png" />
+          <img src="./img/common/products-2.png" alt="Cake" class="product-card__img" />
+        </picture>
         <h3 class="product-card__title">milkshakes</h3>
         <div class="product-card__ellipsis">
           <span class="product-card__ellips"></span>
