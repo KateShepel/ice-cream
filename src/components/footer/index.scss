@@ -101,8 +101,30 @@
 		width: 149px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 22px;
 		@media screen and (min-width: $tablet-size) {
 			width: 276px;
 		}
 	}
+
+	&__made-with-love {
+		text-align: center;
+		padding-bottom: 22px;
+	}
+
+	// .footer__made-with-love-heart
+
+	&__made-with-love-heart {
+		color: $main-color;
+	}
+
+	// .footer__made-with-love-link
+
+	&__made-with-love-link {
+		color: $main-color;
+	}
+}
+
+.footer {
+	// .footer__made-with-love
 }
