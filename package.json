@@ -5,7 +5,7 @@
   "description": "The landing site of the Ice Cream company.",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "clean": "rimraf dist",
     "predeploy": "npm run clean && npm run build",
     "deploy": "gh-pages -d dist"
