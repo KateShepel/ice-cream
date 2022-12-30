@@ -119,13 +119,13 @@
 			display: flex;
 			flex-direction: column;
 		}
+
+		& a {
+			color: $main-color;
+		}
 	}
 
 	&__made-with-love-heart {
-		color: $main-color;
-	}
-
-	&__made-with-love-link {
 		color: $main-color;
 	}
 }
