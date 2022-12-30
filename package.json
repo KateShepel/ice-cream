@@ -1,10 +1,14 @@
 {
+  "homepage": "https://KateShepel.github.io/ice-cream",
   "name": "ice-cream",
   "version": "1.0.0",
   "description": "The landing site of the Ice Cream company.",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "clean": "rimraf dist",
+    "predeploy": "npm run clean && npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -12,15 +16,17 @@
   },
   "author": "mariyakaterina@gmail.com, andrij.pechnikov@gmail.com",
   "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "bugs": {
     "url": "https://github.com/KateShepel/ice-cream/issues"
   },
-  "homepage": "https://github.com/KateShepel/ice-cream#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.8.0",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
+    "rimraf": "^3.0.2",
     "sharp": "^0.31.2"
   }
 }
