@@ -101,8 +101,31 @@
 		width: 149px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 12px;
 		@media screen and (min-width: $tablet-size) {
 			width: 276px;
 		}
+	}
+
+	&__made-with-love {
+		font-family: $font-secondary;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 152%;
+		text-align: center;
+		color: $grey-text-color;
+		padding-bottom: 22px;
+		@media screen and (max-width: $tablet-size) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		& a {
+			color: $main-color;
+		}
+	}
+
+	&__made-with-love-heart {
+		color: $main-color;
 	}
 }
