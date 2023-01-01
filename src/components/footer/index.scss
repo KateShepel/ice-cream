@@ -1,11 +1,12 @@
 .footer {
 	background-color: $light-background-color;
+	position: relative;
 
 	&__flex-container {
 		@media screen and (min-width: $tablet-size) {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 91px;
+			margin-bottom: 93px;
 		}
 
 		@media screen and (min-width: $desktop-size) {
@@ -81,12 +82,9 @@
 	}
 
 	&__horizontal-line {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 22px;
-		position: relative;
-		left: calc(-100vw / 2 + 100% / 2);
-		width: 100vw;
+		position: absolute;
+		left: 0;
+		width: 100%;
 		height: 1px;
 		background-color: $footer-horizontal-line-color;
 	}
@@ -99,6 +97,7 @@
 		text-align: center;
 		color: $grey-text-color;
 		width: 149px;
+		padding-top: 22px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 12px;
